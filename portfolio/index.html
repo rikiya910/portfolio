@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>SIMPLE</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica+SC&display=swap');
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="header_logo">SIMPLE</div>
+        <nav id="global_navi">
+            <ul>
+                <li id="nav_greet">Greet</li>
+                <li id="nav_work">Work</li>
+                <li id="nav_program">Program</li>
+                <li id="nav_study">Study</li>
+                <li id="nav_contact">Contact</li </ul>
+        </nav>
+    </header>
+    <div id="wrapper">
+        <section id="greet" class="image_bottom">
+            <h1>Greet</h1>
+            <div class="image_flex">
+                <div class="image_fixed animated">
+                    <p>閲覧いただきありがとうございます！</p>
+                    <p>初めまして、太田 利樹哉です。</p>
+                    <p>WEBエンジニア 就職志望 都内大学4年生です。</p>
+                </div>
+                <img class="images" src="images/myself.jpg" alt="myself">
+            </div>
+        </section>
+        <section id="work">
+            <h1>Work</h1>
+            <p class="animated">インターン: 2020年 7月より 2ヶ月 （WEBディレクター)</p>
+            </p>
+        </section>
+        <section id="program">
+            <h1>Program</h1>
+            <div class="animated">
+                <p>Progate</p>
+                <p class="small_p">→ HTML&CSS, JavaScript, jQuery, Ruby, Rails, CommandLine, Git, SQL</p>
+                <p>TechAcademy フロントエンドコース (2020年 12月 卒業)</p>
+                <p class="small_p">→ HTML&CSS, JavaScript, jQuery, Bootstrap, 外部ライブラリ, Web API, BaaS, Vue.js, AWS, さくらレンタルサーバ, Slack</p>
+                <p>ドットインストール</p>
+                <p class="small_p">→ GitHub, Atom, Sass, React</p>
+                <p>その他</p>
+                <p class="small_p">→ Railsチュートリアル, Trello, Qiita, はてなブログ</p>
+            </div>
+        </section>
+        <section id="study" class="image_bottom">
+            <h1>Study</h1>
+            <div class="image_flex">
+                <div class="image_fixed animated">
+                    <p>東洋大学 法学部 4年</p>
+                    <p>明治学院高校 卒業</p>
+                    <p>宅地建物取引士 合格</p>
+                </div>
+                <img class="images" src="images/university.jpg" alt="university">
+            </div>
+        </section>
+        <section id="contact" class="image_bottom">
+            <h1>Contact</h1>
+            <div class="image_flex">
+                <div class="image_fixed" id="image_fixed_copy">
+                    <p class="animated">Mail: <a href="#" id="copy_btn" class="hover">rikiya910.mg@icloud.com</a></p>
+                    <div id="copy_select">Copy</div>
+                    <div id="copy_success">Success</div>
+                </div>
+                <img class="images" src="images/room.jpg" alt="room">
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div id="message" class="animated">
+            <div id="coffee">
+                <img id="coffee_image" v-bind:src="photo.imageURL" v-bind:alt="photo.text" v-for="photo in photos" v-bind:key="photo.id">
+            </div>
+            <i class="fas fa-desktop"></i>Thank you for browsing<i class="fas fa-desktop"></i>
+        </div>
+
+        <a href="#" class="hover" id="top">Top</a>
+    </footer>
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="jquery.waypoints.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

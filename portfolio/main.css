@@ -1,0 +1,198 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+    font-family: 'IM Fell Double Pica SC', serif;
+    opacity: 0.6;
+}
+
+header {
+    width: 100%;
+    height: 600px;
+    display: none;
+}
+
+#header_logo {
+    margin: 100px 80px;
+    font-size: 130px;
+}
+
+#global_navi ul li {
+    margin: 220px 10px;
+    font-size: 35px;
+    display: inline-block;
+}
+
+#global_navi ul li:hover {
+    color: #C0C0C0;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#wrapper {
+    width: 100%;
+    font-size: 33px;
+}
+
+section {
+    margin-bottom: 250px;
+}
+
+h1 {
+    margin: 0 120px;
+    font-size: 80px;
+    font-weight: 400;
+    display: none;
+}
+
+p {
+    margin: 40px 200px;
+    color: #444444;
+}
+
+.small_p {
+    margin: 0px 250px 70px;
+    font-size: 25px;
+    color: #808080;
+}
+
+.images {
+    width: 450px;
+    height: 350px;
+    margin-top: 80px;
+    display: none;
+}
+
+.image_flex {
+    display: flex;
+}
+
+.image_fixed {
+    width: 60%;
+}
+
+.image_bottom {
+    margin-bottom: 50px;
+}
+
+.animated {
+    opacity: 0;
+}
+
+.hover:hover {
+    color: #C0C0C0;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#copy_btn {
+    text-decoration: none;
+    color: rgb(0, 0, 100);;
+}
+
+#copy_select {
+    margin-left: 500px;
+    display: none;
+}
+
+#copy_success {
+    margin-left: 530px;
+    display: none;
+}
+
+footer {
+    width: 100%;
+    margin: 300px 0 200px;
+}
+
+#message {
+    font-size: 60px;
+    text-align: center;
+}
+
+.fa-desktop {
+    margin: 35px 0 0 10px;
+    font-size: 25px;
+    color: #808080;
+}
+
+#coffee_image {
+    width: 200px;
+    height: 200px;
+    margin: 50px 10px;
+}
+
+#top {
+    position: fixed;
+    bottom: 50px;
+    right: 55px;
+    font-size: 50px;
+    color: #808080;
+    text-decoration: none;
+    display: none;
+}
+
+
+@media (max-width: 1020px) {
+    body {
+        opacity: 0.7;
+    }
+  
+    #header_logo {
+        width: 100%;
+        margin-left: 30px;
+        font-size: 160px;
+        text-align: center;
+    }
+
+    #global_navi {
+        display: none;
+    }
+
+    p {
+        margin: 30px 150px;
+    }
+    
+    .images {
+        width: 600px;
+        height: 400px;
+    }
+    
+    .image_flex {
+        text-align: center;
+        display: block;
+    }
+
+    .image_fixed {
+        width: 100%;
+    }
+    
+    .image_bottom {
+        margin-bottom: 250px;
+    }
+    
+    #image_fixed_copy {
+        height: 200px;
+        font-size: 50px;
+    }
+    
+    .animated {
+        display: none;
+        opacity: 1;
+    }
+
+    footer {
+        margin: 450px 0 300px;
+    }
+
+    #message {
+        font-size: 80px;
+    }
+    
+    #top {
+        bottom: 70px;
+        font-size: 70px;
+    }
+}
