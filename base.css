@@ -1,0 +1,56 @@
+@charset 'utf-8';
+
+body,
+input, textarea, code, select {
+	font-family:
+		"Noto Sans JP",
+		/* Google Fonts */
+		"Helvetica Neue",
+		"Segoe UI",
+		Verdana,
+		"Hiragino Kaku Gothic ProN",
+		"Hiragino Sans",
+		"BIZ UDPGothic",
+		Meiryo,
+		sans-serif;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	background-color: #fff;
+	color: #444;
+}
+
+input, textarea {
+	color: #444;
+}
+
+code, pre {
+	font-size: 1em;
+	font-family: "Courier New", Consolas, monospace;
+}
+
+img {
+	width: 100%;
+	border: 0;
+	vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6, dl, p, ul, ol, dd, figure, figcaption, form {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}

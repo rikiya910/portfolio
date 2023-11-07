@@ -1,0 +1,41 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Memo</title>
+    <link rel="stylesheet" href="css/sanitize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <div id="side">
+            <ul class="btns main-btns">
+                <li class="item-split"><a id="side-split" class="btn" href="javascript:;"></a></li>
+                <li class="item-search"><a id="side-search" class="btn" href="javascript:;"></a></li>
+                <li class="item-history"><a id="side-history" class="btn" href="javascript:;"></a></li>
+                <li><a id="side-new" class="btn" href="javascript:;"></a></li>
+            </ul>
+            <ul class="btns order">
+                <li><a id="side-up" class="btn" href="javascript:;"></a></li>
+                <li><a id="side-down" class="btn" href="javascript:;"></a></li>
+            </ul>
+            <div id="search-block"><input type="text"></div>
+            <ul id="side-items"></ul>
+        </div>
+        <div id="easy" class="ban">
+            <div class="page">
+                <input id="easy-title" class="title" type="text" disabled>
+                <textarea id="easy-text" class="text" disabled></textarea>
+            </div>
+            <p class="at">リストをクリックで選択してください。</p>
+        </div>
+        <div id="hard" class="ban">
+            <div class="page">
+                <input id="hard-title" class="title" type="text" disabled>
+                <textarea class="text" id="hard-text" disabled></textarea>
+            </div>
+            <p class="at">リストをダブルクリックで選択してください。</p>
+        </div>
+    </div>
+</body>
+</html>
